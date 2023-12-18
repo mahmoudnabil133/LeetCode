@@ -24,6 +24,5 @@ class Solution(object):
                     break
                 j += 1
             output.append(num)
-            output.sort(reverse=True)
-
+        output.sort(reverse=True)
         return output[0]
