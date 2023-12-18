@@ -1,4 +1,6 @@
 """
+(mediam problem)
+
 linked list problem
 first iterate 2 linked lists to aptain the 2 numbers and add them
 then separate each digit of the number and append it to list
