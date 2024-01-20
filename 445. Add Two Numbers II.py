@@ -4,6 +4,7 @@ class ListNode:
         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        # use stack to optain each number
         st1 = []
         st2 = []
         while l1:
@@ -15,6 +16,7 @@ class Solution:
             l2 = l2.next
         sum = 0
         mul = 1
+        # itirate stack and add 2 numbers then get sum
         while st1 and st2:
             num1 = st1.pop() * mul
             num2 = st2.pop() * mul
@@ -32,6 +34,7 @@ class Solution:
                 mul *= 10
         prev = None
         current = None
+        # convert a sum to linked list and return it
         if not sum:
             current = ListNode(0)
         while sum:
