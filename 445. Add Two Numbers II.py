@@ -5,31 +5,31 @@ class ListNode:
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         # use stack to optain each number
-        st1 = []
-        st2 = []
+        stack1 = []
+        stack2 = []
         while l1:
-            st1.append(l1.val)
+            stack1.append(l1.val)
             l1 = l1.next
 
         while l2:
-            st2.append(l2.val)
+            stack2.append(l2.val)
             l2 = l2.next
         sum = 0
         mul = 1
         # itirate stack and add 2 numbers then get sum
-        while st1 and st2:
-            num1 = st1.pop() * mul
-            num2 = st2.pop() * mul
+        while stack1 and stack2:
+            num1 = stack1.pop() * mul
+            num2 = stack2.pop() * mul
             sum += num1 + num2
             mul *= 10
-        if not st1:
-            while st2:
-                num2 = st2.pop() * mul
+        if not stack1:
+            while stack2:
+                num2 = stack2.pop() * mul
                 sum +=num2
                 mul *= 10
-        elif not st2:
-            while st1:
-                num1 = st1.pop() * mul
+        elif not stack2:
+            while stack1:
+                num1 = stack1.pop() * mul
                 sum += num1
                 mul *= 10
         prev = None
