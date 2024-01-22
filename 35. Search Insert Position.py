@@ -11,6 +11,7 @@ class Solution:
                 low = mid + 1
             else:
                 high = mid - 1
+        "if target not found return the address that supposed to be right"
         if target > nums[mid]:
             return mid+1
         return mid
