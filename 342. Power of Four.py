@@ -1,4 +1,4 @@
-"check if num is power of 4 or not"
+"check if num is power of 4  or not"
 class Solution:
     def isPowerOfFour(self, n: int) -> bool:
         if n == 0:
