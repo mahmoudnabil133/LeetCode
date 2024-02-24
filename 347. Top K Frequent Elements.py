@@ -1,5 +1,5 @@
 class Solution:
-    def topKFrequent(self, nums):
+    def topKFrequent(self, nums, k):
         dic = {}
         # hash map (dictionary) to count frequincies of each item
         for i in nums:
