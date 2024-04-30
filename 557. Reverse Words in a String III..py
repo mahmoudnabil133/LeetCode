@@ -25,4 +25,3 @@ class Solution:
                 new_str += rev_word
                 word = ''
         return new_str
-
