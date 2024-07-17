@@ -10,6 +10,7 @@ class Solution:
             return None
         q = deque()
         trees = []
+        to_delete = set(to_delete)
         if root.val not in to_delete:
             trees.append(root)
         else:
