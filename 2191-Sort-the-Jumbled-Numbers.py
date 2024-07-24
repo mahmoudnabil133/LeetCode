@@ -20,10 +20,9 @@ class Solution:
                 val += (dic[dig] * mul)
                 mul *= 10
             map_nums[key] = val
-        print(map_nums)
         unique_nums = sorted(map_nums, key= lambda x: map_nums[x])
-        out = []
 
+        out = []
         for num in unique_nums:
             out += [num] * freq[num]
         return out
