@@ -11,7 +11,6 @@ public class Solution {
             } else if (curDiagonal == maxDiagonal){
                 maxArea = (int) Math.Max(maxArea, curArea);
             }
-            Console.WriteLine($"curDiag = {curDiagonal}, maxDiagonal = {maxDiagonal}, curArea = {curArea},  maxArea = {maxArea}");
         }
         return maxArea;
     }
